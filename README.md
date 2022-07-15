@@ -10,4 +10,4 @@ Just follow instructions blindly and everything will flow.
 
 ## WARNINGS
 
-**ENSURE YOU ENTER THE CORRECT INFORMATION**. Otherwise, it won't work.
+**ENSURE YOU ENTER THE CORRECT INFORMATION**. Otherwise, it won't work :(
