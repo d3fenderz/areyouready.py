@@ -67,7 +67,7 @@ def main():
 
     # Bite me...
     if args.login != "biteme" or args.password != "biteme":
-        print(Color.RED + "OMG! Did you entered your credentials without checking what the code actually does?")
+        print(Color.RED + "OMG! Did you enter your credentials without checking what the code actually does?")
         exit()
     
     print(Color.CYAN + "╰(▔∀▔)╯ At least, you don't go blindly. There's no reason not to start your journey!")
