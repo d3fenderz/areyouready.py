@@ -31,7 +31,7 @@ from argparse import ArgumentParser
 class Color:
     CYAN = '\033[96m'
     RED = '\033[91m'
-    END = '\033[0m'
+    END = '\033[0m' # is that even useful??
 
 def cipher_to_text():
     return "V2hhdCBhcmUgeW91IGxvb2tpbmcgYXQ/IEl0J3Mgbm90IHRoZXJlLiBUaGlzIGZ1bmN0aW9uIHNlZW1zIHVzZWxlc3MuLi4="
