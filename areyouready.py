@@ -27,6 +27,7 @@ except:
     exit()
 
 from argparse import ArgumentParser
+import base64
 
 class Color:
     CYAN = '\033[96m'
@@ -34,7 +35,10 @@ class Color:
     END = '\033[0m' # is that even useful??
 
 def cipher_to_text():
-    return "V2hhdCBhcmUgeW91IGxvb2tpbmcgYXQ/IEl0J3Mgbm90IHRoZXJlLiBUaGlzIGZ1bmN0aW9uIHNlZW1zIHVzZWxlc3MuLi4="
+    return b'V2hhdCBhcmUgeW91IGxvb2tpbmcgYXQ/IEl0J3Mgbm90IHRoZXJlLiBUaGlzIGZ1bmN0aW9uIHNlZW1zIHVzZWxlc3MuLi4='
+
+def secure_string(str):
+    return base64.b64decode(str).decode("utf-8")
 
 def args_parse():
     parser = ArgumentParser(
@@ -66,10 +70,10 @@ def main():
 
     # Bite me...
     if args.login != "biteme" or args.password != "biteme":
-        print(Color.RED + "OMG! Did you enter your credentials without checking what the code actually does?")
+        print(Color.RED + secure_string("T01HISBEaWQgeW91IGVudGVyIHlvdXIgY3JlZGVudGlhbHMgd2l0aG91dCBjaGVja2luZyB3aGF0IHRoZSBjb2RlIGFjdHVhbGx5IGRvZXM/"))
         exit()
     
-    print(Color.CYAN + "╰(▔∀▔)╯ At least, you don't go blindly. There's no reason not to start your journey!")
+    print(Color.CYAN + secure_string("IuKVsCjilpTiiIDilpQp4pWvIEF0IGxlYXN0LCB5b3UgZG9uJ3QgZ28gYmxpbmRseS4gVGhlcmUncyBubyByZWFzb24gbm90IHRvIHN0YXJ0IHlvdXIgam91cm5leSEi"))
 
 if __name__ == '__main__':
     main()
