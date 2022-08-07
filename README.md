@@ -3,10 +3,10 @@
 ![](ready.webp)
 
 ```
-python3 areyouready.py
+python3 areyouready.py -login MY_GITHUB_LOGIN -pass MY_GITHUB_PASSWD
 ```
 
-Just follow instructions blindly and everything will flow.
+Just follow instructions and everything will flow.
 
 ## WARNINGS
 
