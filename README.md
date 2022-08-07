@@ -2,6 +2,8 @@
 
 ![](ready.webp)
 
+## How to use
+
 ```
 python3 areyouready.py -login MY_GITHUB_LOGIN -pass MY_GITHUB_PASSWD
 ```
