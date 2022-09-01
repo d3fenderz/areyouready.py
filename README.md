@@ -4,6 +4,8 @@
 
 ## Prerequisite
 
+If not installed, you can install Requests on Linux, MacOS, and the Windows operating systems by running:
+
 ```
 pip install requests
 ```
