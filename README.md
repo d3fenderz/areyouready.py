@@ -2,6 +2,12 @@
 
 ![](ready.webp)
 
+## Prerequisite
+
+```
+pip install requests
+```
+
 ## How to use
 
 ```
