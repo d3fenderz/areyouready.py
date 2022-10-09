@@ -14,7 +14,6 @@ GitHub: https://github.com/jmau111
 ##########
 # Credits
 # -------
-# pylint: disable-next=line-too-long
 #  _____   _  _     ___             _   _    _      _____    ___   __  __    ___    _____    ___             _  _     ___     ___    _  __    ___    _  _     ___             _____    ___     ___   __  __
 # |_   _| | || |   | __|     o O O | | | |  | |    |_   _|  |_ _| |  \/  |  /   \  |_   _|  | __|     o O O | || |   /   \   / __|  | |/ /   |_ _|  | \| |   / __|     o O O |_   _|  | __|   /   \ |  \/  |
 #   | |   | __ |   | _|     o      | |_| |  | |__    | |     | |  | |\/| |  | - |    | |    | _|     o      | __ |   | - |  | (__   | ' <     | |   | .` |  | (_ |    o        | |    | _|    | - | | |\/| |
@@ -25,16 +24,18 @@ GitHub: https://github.com/jmau111
 
 import sys
 
+
 try:
     import requests
 except ImportError as error:
     print(f"ERROR: {error}, maybe run pip install requests")
     sys.exit(1)
 
+
 from argparse import ArgumentParser
 import base64
 
-# pylint: disable-next=missing-class-docstring,too-few-public-methods
+
 class Color:
     CYAN = '\033[96m'
     RED = '\033[91m'
@@ -80,13 +81,11 @@ def args_parse():
     return parser
 
 
-# pylint: disable-next=missing-function-docstring
 def args_get():
     parser = args_parse()
     return parser.parse_args()
 
 
-# pylint: disable-next=missing-function-docstring
 def main():
     args = args_get()
 
