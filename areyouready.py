@@ -4,7 +4,7 @@
 Exploit Title: AreYouReady
 Date: 2022-07-07
 Exploit Author: Julien Maury
-Software Link: https://github.com/jmau111/areyouready.py
+Software Link: https://github.com/jmau111-org/areyouready.py
 Version: >= 0.0.7
 Tested on: Windows Vista
 CVE: N/A
