@@ -1,7 +1,5 @@
 # Are you ready for ethical hacking?
 
-![](ready.webp)
-
 ## Prerequisite
 
 If not installed, you can install Requests on Linux, MacOS, and the Windows operating systems by running:
