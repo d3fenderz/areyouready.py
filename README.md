@@ -1,5 +1,7 @@
 # Are you ready for ethical hacking?
 
+Official Bash script to test a fundamental skill required for hacking.
+
 ## Prerequisite
 
 If not installed, you can install Requests on Linux, MacOS, and the Windows operating systems by running:
